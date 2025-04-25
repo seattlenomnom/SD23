@@ -29,13 +29,8 @@
 class MyClass
 {
     public:
-    void dosomething() {
-         std::cout << "Hello World! From inside of MyClass" << '\n';
-    }
-
-    void dosomethingelse() {
-        std::cout << "Ciao, World! From inside of MyClass" << '\n';
-    }
+    void dosomething();
+    void dosomethingelse();
 
 
 
@@ -74,6 +69,21 @@ class MyClass
 
 
 /* method definitions (?)               */
+
+void MyClass::dosomething() {
+    std::cout << "Hello, World! From inside an object." << '\n';
+}
+
+void MyClass::dosomethingelse() {
+    std::cout << "Ciao, World! From inside an object." << '\n';
+}
+
+
+
+
+
+
+
 
 
 
