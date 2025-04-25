@@ -28,10 +28,13 @@
 
 class MyClass
 {
-
     public:
     void dosomething() {
          std::cout << "Hello World! From inside of MyClass" << '\n';
+    }
+
+    void dosomethingelse() {
+        std::cout << "Ciao, World! From inside of MyClass" << '\n';
     }
 
 
@@ -55,6 +58,8 @@ class MyClass
      MyClass o;   // create an instance of MyClass.
 
     o.dosomething();
+
+    o.dosomethingelse();
 
 
 
