@@ -18,6 +18,11 @@
  * capable.
  *
  *
+ * Thu 24 Apr 2025 10:26:59 PM PDT
+ * Finished with the super basic stuff. Will create a branch and continue
+ * with slightly more advanced concepts.
+ *
+ *
 */
 
 /* includes                    */
@@ -28,10 +33,10 @@
 
 class MyClass
 {
+    private:
+        int x;
     public:
-    void dosomething();
-    void dosomethingelse();
-
+        void printx();
 
 
 
@@ -50,12 +55,10 @@ class MyClass
 
 
  int main() {
-     MyClass o;   // create an instance of MyClass.
+     MyClass o;
 
-    o.dosomething();
-
-    o.dosomethingelse();
-
+     o.x = 123;
+     o.printx();
 
 
 
@@ -70,17 +73,10 @@ class MyClass
 
 /* method definitions (?)               */
 
-void MyClass::dosomething() {
-    std::cout << "Hello, World! From inside an object." << '\n';
+
+void MyClass::printx() {
+    std::cout << "The value of x is: " << x << '\n';
 }
-
-void MyClass::dosomethingelse() {
-    std::cout << "Ciao, World! From inside an object." << '\n';
-}
-
-
-
-
 
 
 
